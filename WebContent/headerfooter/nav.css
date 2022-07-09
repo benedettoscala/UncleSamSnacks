@@ -1,0 +1,186 @@
+*{
+    text-decoration:none;
+     list-style:none; 
+     margin:0px; 
+     padding:0px; 
+     outline:none;
+}
+
+body{
+    margin:0px;
+     padding:0px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+section{
+    width:100%; 
+    max-width:1200px; 
+    margin:0px auto; 
+    display:table; 
+    position:relative;
+}
+
+h1{
+    margin:0px auto; 
+    display:table; 
+    font-size:26px; 
+    
+    text-align:center;
+    }
+
+h1 span{
+    font-weight:500;
+}
+
+.boh{
+    background-color:rgb(18, 18, 206); 
+}
+
+#logo{
+    float:left; 
+    font-size:20px; 
+    text-transform:uppercase;
+    color:white; 
+    font-weight:600; 
+    padding:20px 0px;
+}
+
+nav{
+    width:auto; 
+    float:right;
+}
+
+nav ul{
+    display:table; 
+    float:right;
+}
+
+nav ul li{
+    float:left;
+}
+
+nav ul li:last-child{
+    padding-right:0px;
+}
+
+nav ul li a{
+    color:white; 
+    font-size:18px; padding: 25px 20px; 
+    display:inline-block; 
+    transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover
+{
+    background-color:red;
+    color:white;
+    transition: all 0.5s ease 0s;
+}
+nav ul li a:hover i{
+    color:white; 
+    transition: all 0.5s ease 0s;
+}
+
+
+.toggle-menu ul{
+    display:table; 
+    width:25px;
+}
+
+.toggle-menu ul li{
+    width:100%; 
+    height:3px;
+    background-color:white; 
+    margin-bottom:4px;}
+
+.toggle-menu ul li:last-child{margin-bottom:0px;}
+
+input[type=checkbox], .labelmenu{display:none;}
+
+.content{
+    display:table; 
+    margin-bottom:60px; 
+    width:900px;
+}
+.content h2{
+    font-size:18px; 
+    font-weight:500; 
+    color:white; 
+    border-bottom:1px solid white(188, 32, 32); 
+    display:table; padding-bottom:10px; 
+    margin-bottom:10px;
+}
+
+.content p{
+    font-size:14px; 
+    line-height:22px; 
+    color:#7c7c7c; 
+    text-align:justify;}
+
+footer{
+    display:table; 
+    padding-bottom:30px; 
+    width:100%;
+}
+.social
+{
+    margin:0px auto; display:table; display:table;
+}
+
+.social li{
+    float:left; 
+    padding:0px 10px;
+}
+
+.social li a{
+    color:blue;
+     transition: all 0.5s ease 0s;
+    }
+
+.social li a:hover{
+    color:white; 
+    transition: all 0.5s ease 0s;
+}
+
+@media only screen and (max-width: 1440px) {
+    section{max-width:95%;}
+}
+
+@media only screen and (max-width: 980px) {
+.boh{padding:20px 0px;}
+#logo{padding:1px;}
+input[type=checkbox] {position: absolute; top: -9999px; left: -9999px; background:none;}
+input[type=checkbox]:fous{background:none;}
+.labelmenu {float:right; padding:8px 0px; display:inline-block; cursor:pointer; }
+input[type=checkbox]:checked ~ nav {display:block;}
+
+nav{display:none; position:absolute; right:0px; top:53px; background-color:#002e5b; padding:0px; z-index:99;}
+nav ul{width:auto;}
+nav ul li{float:none; padding:0px; width:100%; display:table;}
+nav ul li a{color:#FFF; font-size:15px; padding:10px 20px; display:block; border-bottom: 1px solid rgba(225,225,225,0.1);}
+nav ul li a i{color:white; padding-right:13px;}
+}
+
+@media only screen and (max-width: 1250px) {
+    .content{width:90%;}
+}
+
+@media only screen and (max-width: 568px) {
+    h1{}
+    h1 span{display:block;}
+}
+
+@media only screen and (max-width: 480px) {
+    section {max-width: 90%;}
+}
+
+@media only screen and (max-width: 360px) {
+    h1{font-size:20px;}
+    .labelmenu{padding:5px 0px;}
+    #logo{font-size: 20px;}
+    nav{top:47px;}
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {padding: 20px 0px;}
+}
