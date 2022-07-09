@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap%27");
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Quicksand", sans-serif;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("banner1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    overflow: hidden;
+}
+.content {
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+    margin: 20px;
+    background: white;
+    border-radius: 25px;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: -10px 10px 67px -12px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: apparition 0.8s 1.2s cubic-bezier(0.39, 0.575, 0.28, 0.995) forwards;
+}
+
+.content h1{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.content p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.1rem;
+    color: #595959;
+}
+.content p:last-child {
+    margin-bottom: 0;
+}
+.content button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 15px;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 25px;
+}
+
+.content button:hover{
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+    background-color: white;
+    color: black;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+   }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+   }
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(180px);
+   }
+}
+@keyframes floatReverse {
+    0%, 100% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-180px);
+   }
+}
+@keyframes float2 {
+    0%, 100% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(28px);
+   }
+}
+@keyframes floatReverse2 {
+    0%, 100% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-28px);
+   }
+}

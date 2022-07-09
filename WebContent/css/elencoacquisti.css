@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+.patata {
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgb(178, 177, 177), white, rgb(178, 177, 177));
+}
+
+.list {
+    width: 980px;
+    height: 630px;
+    padding: 27px;
+    margin: 10px auto;
+    background-color: white;
+}
+
+.list .heading {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.list .heading h4 {
+    float: left;
+}
+
+.list .heading i {
+    float: right;
+    color: #BEBEBE;
+}
+
+.list form {
+    margin-bottom: 20px;
+}
+
+/* Start Main */
+
+.list .main {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(192, 192, 192);
+}
+
+
+.list .main span {
+    font-size: 14px;
+}
+
+.list .main .code {
+    margin-right: 20px;
+}
+
+.list .main .image {
+    margin-right: 20px;
+}
+
+.list .main .name {
+    position: relative;
+    margin-right: 60px;
+}
+
+.list .main .customer {
+    position: relative;
+    margin-right: 50px;
+    margin-left: 135Px;
+}
+
+.list .main .quantity {
+    margin-right: 35px;
+}
+
+.list .main .prezz {
+    position: relative;
+    margin-right: 40px;
+}
+
+.list .main .date {
+    margin-right: 30px;
+    position: relative;
+}
+
+
+/* End Main */
+
+/* Start item */
+
+.items a{
+    text-decoration: none;
+}
+
+.items .item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgb(222, 222, 222);
+}
+
+
+.items .item span {
+    color: rgb(41, 41, 41);
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 38px;
+}
+
+.items .item img {
+    width: 6%;
+    margin-right: 28px;
+}
+
+.items .item span:nth-of-type(2) {
+    margin-right: 50px;
+    margin-right: 50px;
+}
+
+.items .item span:nth-of-type(3) {
+    margin-right: 80px;
+}
+
+.items .item span:nth-of-type(4) {
+    width: 34px;
+    height: 27px;
+    line-height: 27px;
+    margin-right: 55px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #DDD;
+}
+
+.items .item span:nth-of-type(5) {
+    margin-right: 50px;
+    font-size: 13px;
+}
+.items .item span:nth-of-type(6) {
+    font-size: 13px;
+    margin-right: 80px;
+}
+
+
+.items .item:nth-of-type(2) span:nth-of-type(2),
+.items .item:nth-of-type(5) span:nth-of-type(2) {
+    margin-right: 50px;
+}
+
+.items .item:nth-of-type(2) span:nth-of-type(4)
+{
+    margin-left: 2px;
+}
+
+.items .item:nth-of-type(3) span:nth-of-type(4),
+.items .item:nth-of-type(4) span:nth-of-type(4)
+{
+    margin-left: 40px;
+}
+
+.items .item:nth-of-type(5) span:nth-of-type(4)
+{
+    margin-left: 5px;
+}
+
+.items .item:nth-of-type(6) span:nth-of-type(4)
+{
+    margin-left: 43px;
+}
+
+.items .item:nth-of-type(2) span:nth-of-type(6),
+.items .item:nth-of-type(3) span:nth-of-type(6),
+.items .item:nth-of-type(4) span:nth-of-type(6),
+.items .item:nth-of-type(5) span:nth-of-type(6),
+.items .item:nth-of-type(6) span:nth-of-type(6) {
+    color: rgb(41, 41, 41);
+}
+
+.items .item:nth-of-type(3) span:nth-of-type(2),
+.items .item:nth-of-type(6) span:nth-of-type(2) {
+    margin-right: Ypx;
+}
+
+.items .item:nth-of-type(4) span:nth-of-type(2) {
+    margin-right: 51px;
+}
+
+.items .item:nth-of-type(3) span:nth-of-type(3),
+.items .item:nth-of-type(6) span:nth-of-type(3) {
+    margin-right: 43px;
+}
+
+.items .item:nth-of-type(4) span:nth-of-type(3) {
+    margin-right: 42px;
+}
+
+/* End item */
+
+/* Start Bottom */
+
+.list .bottom {
+    color: #9a9a9a;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.list .bottom a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.list .bottom a:hover{
+    color: red;
+}
+/* End Bottom */

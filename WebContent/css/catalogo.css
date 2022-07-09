@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*{
+  box-sizing: 0;
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.sfondo {
+  background: linear-gradient(to right, rgb(178, 177, 177), white, rgb(178, 177, 177));
+
+}
+
+.catalogo-container{
+	    min-height: 100vh;
+	display:grid;
+  justify-content: center;
+
+}
+
+.filtro{
+	width: 300px;
+    height: 600px;
+    background-color: white;
+    margin-top: 33px;
+    margin-right: 23px;
+    
+}
+
+.card-image{
+	max-width:100%;
+	height:200px;
+	object-fit:contain;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    justify-content: center;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+
+.card {
+	transform: scale(0.9);
+  	display: flex;
+    flex-direction: column;
+    width: 270px;
+    max-height:536px;
+    overflow: hidden;
+    box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 10%);
+    border-radius: 1em;
+    background: white;
+}
+.price{
+	font-size:20px;
+	font-weight:500;
+		text-align:center;
+	}
+.product-name-price-scontato{
+	color:red;
+	text-decoration-line: line-through;
+}
+
+.product-name{
+	height:60px;
+}
+.btn_normal{
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+
+.btn_primary {
+	cursor:pointer;
+  border-style: solid;
+  outline: none;
+  background: white;
+  padding: 1rem 1.5rem;
+  margin-left: 2px;
+  border-radius: 50px;
+  color: black;
+  font-size: 1.2rem;
+  transition: all .2s ease-in;
+  text-decoration: none;
+}
+
+.btn_primary:hover {
+  background: red;
+  color:white;
+}
+
+.admin {
+	cursor: pointer;
+  outline: none;
+  color: black;
+  font-size: 1.2rem;
+  transition: all .2s ease-in;
+  text-decoration: none;
+}
+
+.admin:hover {
+  color:red;
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-red {
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.tag-saldo{
+  background: rgb(18, 18, 206);
+  background: linear-gradient(to bottom, rgb(104, 104, 255), rgb(18, 18, 206));
+  color: #fafafa;
+  align-self: center;
+  font-size: 15px;
+  
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: auto;
+  text-align: center;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+  float:left;
+  width: 15%;
+}
+
+.navImage{
+	width:25px;
+}
+.navigation-bar{
+	    background: transparent;
+    display: flex;
+    /* grid-template-columns: repeat(2, 5px); */
+    /* column-gap: 70px; */
+    justify-content: center;
+    padding-bottom: 20px;
+}
+a#indietro {
+    padding-right: 40px;
+}
+@media screen and (max-width:1200px){
+
+  .container {
+    grid-template-columns: repeat(3, 240px);
+  }
+}
+@media screen and (max-width:900px){
+
+  .container {
+    grid-template-columns: repeat(2, 240px);
+  }
+}
+@media screen and (max-width:750px){
+
+  .container {
+    grid-template-columns: repeat(2, 240px);
+  }
+}
+
+@media screen and (max-width:610px){
+
+  .container {
+    grid-template-columns: repeat(1, 240px);
+  }
+}

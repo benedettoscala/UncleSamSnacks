@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap%27");
+:root {
+
+
+
+    --ff-poppins: "Poppins", sans-serif;
+    --ff-montserrat: 'Lobster', cursive;
+    --fs-1: calc(20px + 3.5vw);
+    --fs-2: calc(18px + 1.6vw);
+    --fs-3: calc(16px + 0.45vw);
+    --fs-4: 17px;
+    --fs-5: 16px;
+    --fs-6: 15px;
+    --fs-7: 14px;
+    --fs-8: 13px;
+  
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+  
+    /**
+     * transition
+     */
+  
+    --transition: 0.25s ease-in-out;
+  
+    /**
+     * spacing
+     */
+  
+    --section-padding: 60px;
+  
+    /**
+     * border-radius
+     */
+  
+    --radius-15: 15px;
+    --radius-25: 25px;
+  
+  }
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Quicksand", sans-serif;
+}
+
+.banner{
+    box-sizing: border-box;
+}
+
+.banner li { list-style: none; }
+
+.banner a { text-decoration: none; }
+
+.banner a,
+.banner img,
+.banner span,
+.banner input,
+.banner label,
+.banner button{ display: block; }
+
+.banner input,
+.banner button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+.banner button { cursor: pointer; }
+
+.banner input { width: 100%; }
+
+.hero {
+    background-image: url("banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: hsla(0, 6%, 7%, 0.805);
+    background-blend-mode: overlay;
+    display: grid;
+    place-items: center;
+    min-height: 600px;
+    text-align: center;
+    padding-top: 125px;
+  }
+  
+  .hero-title { 
+        margin-bottom: 20px; 
+    }
+    
+  .hero-text {
+    color: white;
+    font-size: var(--fs-5);
+    margin-bottom: 40px;
+  }
+  
+  .banner .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .banner .banner-container { padding-inline: 15px; }
+
+  .banner .btn {
+  color: white;
+  text-transform: uppercase;
+  font-size: var(--fs-5);
+  border-radius: 100px;
+  padding: var(--padding, 8px 18px);
+  border: var(--border-width, 2px) solid transparent;
+  transition: var(--transition);
+  font-family: "Quicksand", sans-serif;
+}
+
+.banner .btn-primary {
+  background: white;
+  color: black;
+}
+
+.banner .btn-primary:hover{
+  background: rgb(18, 18, 206);
+    color: white;
+}
+
+.banner .h1,
+.banner .h2,
+.banner .h3 {
+  font-weight: var(--fw-800);
+  font-family: 'Lobster', cursive;
+  text-transform: capitalize;
+}
+
+.banner .h1 {
+  color: red;
+  font-size: var(--fs-1);
+}
+
+.banner .h2,
+.banner .h3 { color: var(--gunmetal); }
+
+.banner .h2 { font-size: var(--fs-2); }
+
+.banner .h3 {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-700);
+}
+
+.banner .section-title { margin-bottom: 15px; }
+
+.banner .section-text {
+  color: black;
+  margin-bottom: 30px;
+}
+
+.banner .card-text {
+  color: black;
+  font-size: var(--fs-5);
+}

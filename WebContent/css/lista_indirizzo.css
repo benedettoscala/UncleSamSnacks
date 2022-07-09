@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap%27");
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Quicksand", sans-serif;
+}
+.address{
+    padding: 50px;
+   background-image: url(banner1.jpg); 
+}
+
+.address .text-content{
+        padding: 20px;
+    background: white;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 25px;
+  }
+
+.address .text{
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+
+.address .text:hover{
+    font-size: 20px;
+    color: red;
+}
+  
+.address .text-title{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Lobster', cursive;
+}
+
+.address-table{
+    width:100%;
+    table-layout: fixed;
+}
+.tbl-header{
+    background-color: red;
+    color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.tbl-content{
+    height: 450px;
+    overflow-x:auto;
+    margin-top: 0px;
+    background-color: white;
+    border: 1px solid rgba(32, 32, 32, 0.3);
+}
+.address-th{
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: flex;
+}
+
+.address-td{
+    padding: 15px;
+    text-align: center;
+    vertical-align:middle;
+    font-weight: 400;
+    font-size: 15px;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+.close{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+@media screen and (max-width: 600px){
+	.address{
+	padding:20px;
+	}
+    .address-th{
+        font-size: 15px;
+    }
+
+    .address-td{
+        font-size: 12px;
+    }
+
+    .close{
+    width: 20px;
+    height: 20px;
+}
+}
+
+@media screen and (max-width: 500px){
+    
+    .address-th{
+        font-size: 11px;
+    }
+
+    .address-td{
+        font-size: 11px;
+    }
+
+    .btn-delate {
+        content: '';
+        background: url("/carta/close.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 13px;
+        height: 13px;
+        width: 13px;
+        position: absolute;
+      }
+      
+      .btn-delate:hover {
+        content: '';
+        background: url("/carta/close-hover.png");
+        background-position: center;
+        background-size: 13px;
+        height: 13px;
+        width: 13px;
+      }
+
+      .close{
+    width: 20px;
+    height: 20px;
+}
+}
+
+@media screen and (max-width: 400px){
+    
+    .address-th{
+        font-size: 9px;
+        padding: 20px 1px;
+    }
+
+    .address-td{
+        font-size: 8px;
+    }
+
+    .address-table thead{
+        width: 50%;
+    }
+
+    .btn-delate {
+        content: '';
+        background: url("/carta/close.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 13px;
+        height: 13px;
+        width: 13px;
+        position: absolute;
+      }
+      
+      .btn-delate:hover {
+        content: '';
+        background: url("/carta/close-hover.png");
+        background-position: center;
+        background-size: 13px;
+        height: 13px;
+        width: 13px;
+      }
+
+      .close{
+        width: 10px;
+        height: 10px;
+    }
+}

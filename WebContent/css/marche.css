@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+.marche{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(178, 177, 177), white, rgb(178, 177, 177));
+  position: relative;
+  box-sizing: border-box;
+}
+
+.container-marche{
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.container-marche .main-card{
+  display: flex;
+    justify-content: space-evenly;
+    width: 400%;
+    transition: 1s;
+    flex-direction: row;
+
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+#three:checked ~ .main-card{
+  margin-left: -200%;
+}
+#four:checked ~ .main-card{
+  margin-left: -300%;
+}
+.container-marche .main-card .cards{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-card .cards .carta{
+  width: calc(100% /3);
+  background: transparent;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  margin: 10px;
+}
+.main-card .cards .carta:hover{
+  transform: translateY(-15px);
+}
+
+.cards .carta .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.cards .carta .content .img{
+  height: 100%;
+  width: 100%;
+  padding: 3px;
+  background: none;
+  margin-bottom: 15px;
+}
+.carta .content .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 5px;
+}
+ .container-marche .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: rgb(18, 18, 206);
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active{
+  width: 35px;
+}
+#one:checked ~ .button .one{
+  width: 35px;
+  background-color: red;
+}
+#one:checked ~ .button .two{
+  width: 15px;
+  background-color:rgb(18, 18, 206);
+}
+#one:checked ~ .button .three{
+  width: 15px;
+  background-color:rgb(18, 18, 206);
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+  background-color: red;
+}
+#three:checked ~ .button .one{
+  width: 15px;
+}
+#three:checked ~ .button .two{
+  width: 15px;
+}
+#three:checked ~ .button .three{
+  width: 35px;
+  background-color:red;
+}
+#four:checked ~ .button .one{
+  width: 15px;
+}
+#four:checked ~ .button .two{
+  width: 15px;
+}
+#four:checked ~ .button .three{
+  width: 15px;
+}
+#four:checked ~ .button .four{
+  width: 35px;
+  background-color:red;
+}
+input[type="radio"]{
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card .cards .carta{
+    margin: 20px 10px 10px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .carta{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+  .card .content .img img{
+    height: 110%;
+    width: 110%;
+    object-fit: cover;
+  }
+}

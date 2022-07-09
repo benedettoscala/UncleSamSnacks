@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap%27");
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Quicksand", sans-serif;
+}
+.user{
+	padding: 20px;
+	background: url(banner1.jpg);
+}
+.text-title{
+    background: white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Lobster', cursive;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.user-table{
+    width:100%;
+    table-layout: fixed;
+}
+.tbl-header{
+    background-color: red;
+    color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.tbl-content{
+    height: 450px;
+    overflow-x:auto;
+    margin-top: 0px;
+    background-color: white;
+    border: 1px solid rgba(32, 32, 32, 0.3);
+}
+.user-th{
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: flex;
+}
+
+.user-td{
+    padding: 15px;
+    text-align: center;
+    vertical-align:middle;
+    font-weight: 400;
+    font-size: 15px;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+.go{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.go:hover{
+    color: red;
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+@media screen and (max-width: 600px){
+    .user-th{
+        font-size: 15px;
+    }
+
+    .user-td{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    
+    .user-th{
+        font-size: 13px;
+    }
+
+    .user-td{
+        font-size: 11px;
+    }
+
+
+}
+
+@media screen and (max-width: 400px){
+    
+    .user-th{
+        font-size: 10px;
+    }
+
+    .user-td{
+        font-size: 8px;
+    }
+
+    .user-table thead{
+        width: 50%;
+    }
+
+}

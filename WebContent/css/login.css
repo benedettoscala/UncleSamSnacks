@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Quicksand", sans-serif;
+}
+
+.mannaggia{
+	background: linear-gradient(to right, rgb(178, 177, 177), rgb(236, 236, 236), rgb(178, 177, 177));
+}
+
+.mannaggia section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.mannaggia section .imgBox{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.mannaggia section .imgBox:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mannaggia section .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mannaggia section .contentBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.mannaggia section .contentBox .formBox{
+    width: 50%;
+    align-items: center;
+}
+
+.mannaggia section .contentBox .formBox h2{
+    color: black;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid red;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.mannaggia section .contentBox .formBox .inputBox{
+    margin-bottom: 20px;
+}
+
+.mannaggia section .contentBox .formBox .inputBox span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: black;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.mannaggia section .contentBox .formBox .inputBox input{
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: black;
+    background: transparent;
+    border-radius: 30px;
+}
+
+.mannaggia section .contentBox .formBox .inputBox input[type="submit"]{
+    background-color: white;
+    color: black;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.mannaggia section .contentBox .formBox .inputBox input[type="submit"]:hover{
+    background: red;
+    color:white;
+}
+
+.mannaggia section .contentBox .formBox .inputBox p a{
+    color: black;
+}
+
+@media (max-width: 768px)
+{
+    .mannaggia section .imgBox{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mannaggia section .contentBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .mannaggia section .contentBox .formBox{
+        width: 100%;
+        padding: 40px;
+        margin: 50px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .mannaggia section .contentBox .formBox .inputBox{
+        align-items: center;
+    }
+
+    .mannaggia section .contentBox .formBox .inputBox input{
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    .mannaggia section .contentBox .formBox .inputBox span{
+        margin-left: 20px;
+    }
+
+    .mannaggia section .contentBox .formBox .inputBox input[type="submit"]{
+        margin-left: 45px;
+    }
+}

@@ -1,0 +1,184 @@
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Quicksand", sans-serif;
+}
+
+.santo {
+	    /* background-attachment: scroll; */
+    z-index: 62;
+    background-color: white;
+     height: 100vh; 
+    width: 250px;
+    top: 0px;
+    /* right: 0%; */
+    box-shadow: inset 2px 2px 2px 0px rgb(255 255 255 / 50%), 7px 7px 20px 0px rgb(0 0 0 / 10%), 4px 4px 5px 0px rgb(0 0 0 / 10%);
+    position: fixed;
+    transform: translateX(-251px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar:after {
+    content: '';
+    background: red;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    right: -40px;
+    top: 230px;
+    border-radius: 50%;
+  }
+  
+  .santo:hover {
+    transform: translateX(0px);
+  }
+
+.sidebar{
+
+    display:grid;
+    padding:10px;
+    padding-bottom: 170px;
+    width: 250px;
+    margin-right: 0px;
+}
+
+.category{
+    padding-top: 5px;
+    padding-left:20px;
+} 
+
+.choice-card{
+    margin-left: 30px;
+    border-style: none;
+    padding: 2px;
+    padding-left: 0px;
+}
+.choice-card button{
+    width: 130px;
+    height:50px;
+    color: black;
+    border:none;
+    text-transform: capitalize;
+    border-radius: 15px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(122, 122, 122, 0.186),
+     7px 7px 20px 0px rgba(72, 72, 72, 0.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.choice select{
+    margin-top: 10px;
+    padding:5px;
+    padding-right: 70px;
+    border-radius: 10px;
+}
+
+.text{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.btn-1{
+    z-index: 8;
+}
+
+.btn-2{
+    z-index: 8;
+}
+.btn-1:hover {
+    color: white;
+}
+
+.btn-1:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.btn-1:active {
+    top: 2px;
+}
+
+.btn-1:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: red;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-2:hover {
+    color: white;
+}
+
+.btn-2:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.btn-2:active {
+    top: 2px;
+}
+
+.btn-2:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgb(18, 18, 206);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.zitella{
+    box-shadow:inset 2px 2px 2px 0px rgba(122, 122, 122, 0.186),
+     7px 7px 20px 0px rgba(72, 72, 72, 0.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    
+}
+
+.btn-3{
+    width: 80px;
+    height: 30px;
+    color: white;
+    border:none;
+    text-transform: capitalize;
+    margin-top: 12px;
+    margin-left: 85px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-weight: 500;
+    background-color: red;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(122, 122, 122, 0.186),
+     7px 7px 20px 0px rgba(72, 72, 72, 0.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn-3:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width:1054px){
+    
+}

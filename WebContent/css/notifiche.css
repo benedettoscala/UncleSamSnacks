@@ -1,0 +1,75 @@
+#aggiunto {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background: linear-gradient(to right, rgb(165, 0, 0), red, red, rgb(165, 0, 0));
+    border-radius: 35px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px;
+    position: fixed;
+    z-index: 61;
+    left: 50%;
+    top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  #aggiunto.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+
+  #eliminato {
+    /* color: white; */
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    border-radius: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px 25px;
+    position: fixed;
+    z-index: 62;
+    left: 50%;
+    top: 30px;
+    font-size: 18px;
+    background: linear-gradient(to right, rgb(165, 0, 0), red, red, rgb(165, 0, 0));
+    font-weight: 600;
+  }
+  
+  #eliminato.eshow {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 4.5s;
+    animation: fadein 0.5s, fadeout 0.5s 4.5s;
+  }
+
+  #eliminato a{
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+  }
