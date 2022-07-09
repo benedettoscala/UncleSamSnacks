@@ -255,7 +255,7 @@ CREATE TABLE `utente` (
 
 LOCK TABLES `utente` WRITE;
 /*!40000 ALTER TABLE `utente` DISABLE KEYS */;
-INSERT INTO `utente` VALUES ('anna','anna.sommese@libero.it','pass','Anna','Sommese','1965-08-06','utente'),('bensca','scala.benedetto@outlook.it','Bengopico57#','Benedetto','Scala','2001-11-10','Amministratore'),('Cookie','cookieforever@gmail.com','Bengopico57#','Simon','Cook','1996-04-24','utente'),('eliminato','eliminato','eliminato','eliminato','eliminato','1996-04-03','Utente'),('gercraftPRO','gerardomitico@gmail.com','mitico','Gerardo','Napolitano','1998-08-06','utente'),('miky01','mitica46@gmail.com','passwordsicura','Michela','Faella','2001-05-06','Utente'),('Pepves','peppe.vessicchio@gmail.com','passwordsicura','Peppe','Vessicchio','1988-01-03','utente'),('rob65','umbero.smaila@gmail.com','passwordsicura','Roberto','Depresso','1989-07-12','utente');
+INSERT INTO `utente` VALUES ('anna','anna.sommese@libero.it','pass','Anna','Sommese','1965-08-06','utente'),('bensca','scala.benedetto@outlook.it','passwordsicura','Benedetto','Scala','2001-11-10','Amministratore'),('Cookie','cookieforever@gmail.com','passwordsicura','Simon','Cook','1996-04-24','utente'),('eliminato','eliminato','eliminato','eliminato','eliminato','1996-04-03','Utente'),('gercraftPRO','gerardomitico@gmail.com','mitico','Gerardo','Napolitano','1998-08-06','utente'),('miky01','mitica46@gmail.com','passwordsicura','Michela','Faella','2001-05-06','Utente'),('Pepves','peppe.vessicchio@gmail.com','passwordsicura','Peppe','Vessicchio','1988-01-03','utente'),('rob65','umbero.smaila@gmail.com','passwordsicura','Roberto','Depresso','1989-07-12','utente');
 /*!40000 ALTER TABLE `utente` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
