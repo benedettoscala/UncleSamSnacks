@@ -1,2 +1,2 @@
 # UncleSamSnacks
-Progetto TSW sviluppato da Benedetto Scala e Michela Faella, studenti di informatica all'università degli studi di Salerno
+Sito e-commerce per la compravendita di snack americani sviluppato da Scala Benedetto e Faella Michela, studenti dell'Università degli Studi di Salerno, come progetto di Tecnologie Software per il Web
